@@ -76,7 +76,7 @@ margin-left: 5vh;
 
 /*_________________________________________________________________________________ */
 
-/* Audio Drag and Drop START */
+/* Blank Audio Drag and Drop START */
 
 .blankBodyParentOne{
     height: 30vh;
@@ -120,4 +120,32 @@ margin-left: 5vh;
 .addButton:hover{
     margin-top: 2vh;
     opacity: 100%;
+}
+
+/*_________________________________________________________________________________ */
+
+/* Populated Audio Drag and Drop START */
+
+.populatedBodyParentOne{
+    height: 30vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.innerBoxOne{
+    height: 13.5vh;
+    width: 99%;
+    background-color: #FFCA4A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.populatedBoxContent{
+    text-align: center;
+
 }
