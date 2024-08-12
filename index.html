@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+
+
 </head>
 <body>
     <!---------------------------Header Components------------------------------------>
     <Nav class="topnav">
         <div class="headerImage">
-            <a href="index.html"><img src="QAMHeader.svg" width="200" height="100" alt="QAM logo"/></a>
+            <a href="index.html"><img src="media/QAMHeader.svg" width="200" height="100" alt="QAM logo"/></a>
         </div>
         <div class="Navigation-Options-Parent">
             <div class="Navigation-Options-list">
                 <a class="Nav-Buttons" href="tutorial.html">How It Works</a>
-                <a class="Nav-Buttons" href="pro.html">Pro Features</a>
-                <a class="Nav-Buttons" href="login.html">Login</a>
+                <a class="Nav-Buttons" href="pro.html">Privacy Policy</a>
             </div>
         </div>
     </Nav>
 <!---------------------------Drop Box Components------------------------------------>
     <div class="populatedBodyParentOne">
-        <div class="dottedOutlineOne">
-            <div class="innerBoxOne">
-                <div class="populatedBoxContent">
-
+        <div class="populatedDottedOutlineOne">
+            <div class="populatedInnerBoxOne">
+                <p>fileName.filetype</p>
+                <h2>Renameable Field</h2>
+                <div class="populatedSoundWave">
+                    <img src="media/play.png">
+                    <div id="waveform"></div>
                 </div>
+               <!-- <label>
+                    <input type="checkbox" title="Stop All" name="Stop All" value="Stop All"> Stop All Audio
+                </label> -->
             </div>
         </div>
     </div>
@@ -37,18 +42,16 @@
     <div class="blankBodyParentOne">
         <div class="dottedOutlineOne">
             <div class="innerBoxOne">
-                <div class="blankBoxContent">
-                    <h3>Drag and Drop Audio Files</h3>
-                    <p>| .WAV , .MP3 | .M4A | .FLAC | .WMA |</p>
-                </div>
+                <h3>Drag and Drop Audio Files</h3>
+                <p>| .WAV , .MP3 | .M4A | .FLAC | .WMA |</p>
             </div>
         </div>
 
         <div class="addButton">
-            <img src="add-document.svg" width="50" height="50" alt="QAM logo"/></a>
+            <img src="media/add-document.svg" width="50" height="50" alt="QAM logo"/></a>
         </div>
     </div>
 
-    
+    <script src="script.js"> </script>
 </body>
 </html>

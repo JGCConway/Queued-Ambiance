@@ -47,31 +47,33 @@ margin-left: 5vh;
 
 .Navigation-Options-list{
     align-content: center;
+
 }
 
 .Nav-Buttons{
     list-style: none;
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     color: #F2F2F2;
     background-color: #8b96ff;
     padding: 7.5px;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
     border-radius: 10px;
-    margin-right: 8vh;
+    margin-right: 3vw;
 }
 
 .Nav-Buttons:hover{
     list-style: none;
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     color: #292929;
     background-color: #FFCA4A;
     padding: 7.5px;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 /*_________________________________________________________________________________ */
@@ -93,6 +95,7 @@ margin-left: 5vh;
     height: 15vh;
     width: 90%;
     margin-top: 3vh;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,15 +105,12 @@ margin-left: 5vh;
     height: 13.5vh;
     width: 99%;
     background-color: #FFCA4A;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.blankBoxContent{
     text-align: center;
-
 }
 
 .addButton{
@@ -120,6 +120,7 @@ margin-left: 5vh;
 .addButton:hover{
     margin-top: 2vh;
     opacity: 100%;
+    cursor: pointer;
 }
 
 /*_________________________________________________________________________________ */
@@ -132,20 +133,46 @@ margin-left: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.innerBoxOne{
-    height: 13.5vh;
-    width: 99%;
-    background-color: #FFCA4A;
+.populatedDottedOutlineOne{
+    border: rgba(90,105,255, .3);   
+    border-style: dotted;
+    height: 90%;
+    width: 90%;
+    margin-top: 3vh;
+    border-radius: 15px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.populatedBoxContent{
-    text-align: center;
+.populatedInnerBoxOne{
+    height: auto;
+    width: 98%;
+    background-color: #FFCA4A;
+    border-radius: 15px;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
 
+}
+
+.populatedSoundWave{
+    display: flex;
+    align-items: center;
+    
+}
+
+.populatedSoundWave img{
+    width: 5vh;
+    margin-right: 2vh;
+    cursor: pointer;
+}
+
+.populatedSoundWave div{
+    flex: 1;
+    max-width: 97%;
 }
