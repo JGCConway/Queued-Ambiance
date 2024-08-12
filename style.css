@@ -138,7 +138,7 @@ margin-left: 5vh;
 .populatedDottedOutlineOne{
     border: rgba(90,105,255, .3);   
     border-style: dotted;
-    height: 90%;
+    height: 94%;
     width: 90%;
     margin-top: 3vh;
     border-radius: 15px;
@@ -170,6 +170,11 @@ margin-left: 5vh;
     width: 5vh;
     margin-right: 2vh;
     cursor: pointer;
+    opacity:50%;
+}
+
+.populatedSoundWave img:hover{
+    opacity: 100%;
 }
 
 .populatedSoundWave div{

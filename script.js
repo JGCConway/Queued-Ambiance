@@ -1,11 +1,32 @@
-const userFile = document.getElementById
+const playBtn = document.getElementById("playBtn");
 
 
 const wavesurfer = WaveSurfer.create({
     container: '#waveform',
-    waveColor: '#4F4A85',
-    progressColor: '#383351',
-    url: '/audio.mp3',
+    waveColor: '#bdbdbd',
+    progressColor: '#5A69FF',
+    url: 'media/Rain-Sound-effect.mp3',
+    barWidth: 4,
+    responsive: true,
+    barHeight: 4,
+    barRadius: 4,
+    cursorWidth: 4,
+    interact: true
   })
   
-  wavesurfer.load('media/Rain - Sound effect.mp3');
+  wavesurfer.load('media/Rain-Sound-effect.mp3');
+
+  playBtn.onclick = function(){
+    wavesurfer.playPause();
+    if(playBtn.src.includes("play.png")){
+        playBtn.src = "media/pause.png";
+    }else{
+        playBtn.src = "media/play.png";
+    }
+  }
+
+  
+  wavesurfer.on('finish', function(){
+    playBtn.src = "media/play.png";
+    wavesurfer.stop();
+  })
