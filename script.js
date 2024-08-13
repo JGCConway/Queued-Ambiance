@@ -11,7 +11,8 @@ const wavesurfer = WaveSurfer.create({
     barHeight: 4,
     barRadius: 4,
     cursorWidth: 4,
-    interact: true
+    interact: true,
+    getDuration: 1,
   })
   
   wavesurfer.load('media/Rain-Sound-effect.mp3');
@@ -25,8 +26,25 @@ const wavesurfer = WaveSurfer.create({
     }
   }
 
-  
+  loopBtn.onclick = function(){    
+    if (loopBtn.src.includes("loop.png")){
+        loopBtn.src = "media/loopOn.png";
+    }else{
+        loopBtn.src = "media/loop.png";
+    }
+  }
+
   wavesurfer.on('finish', function(){
+    if (loopBtn.src.includes("loopOn.png")){
+      wavesurfer.playPause();
+  }else{
+      loopBtn.src = "media/loop.png";
+      playBtn.src = "media/play.png"
+  }
+  })
+
+  
+  /*wavesurfer.on('finish', function(){
     playBtn.src = "media/play.png";
     wavesurfer.stop();
-  })
+  })*/
