@@ -167,8 +167,8 @@ margin-left: 5vh;
 }
 
 .populatedSoundWave img{
-    width: 5vh;
-    margin-right: 2vh;
+    width: 2vw;
+    margin-right: .5vw;
     cursor: pointer;
     opacity:50%;
 }

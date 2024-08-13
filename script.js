@@ -1,5 +1,6 @@
-const playBtn = document.getElementById("playBtn");
 
+
+const playBtn = document.getElementById("playBtn");
 
 const wavesurfer = WaveSurfer.create({
     container: '#waveform',
@@ -29,8 +30,10 @@ const wavesurfer = WaveSurfer.create({
   loopBtn.onclick = function(){    
     if (loopBtn.src.includes("loop.png")){
         loopBtn.src = "media/loopOn.png";
+        loopBtn.style.opacity = "1"
     }else{
         loopBtn.src = "media/loop.png";
+        loopBtn.style.opacity = ".5"
     }
   }
 
@@ -42,9 +45,3 @@ const wavesurfer = WaveSurfer.create({
       playBtn.src = "media/play.png"
   }
   })
-
-  
-  /*wavesurfer.on('finish', function(){
-    playBtn.src = "media/play.png";
-    wavesurfer.stop();
-  })*/
