@@ -1,7 +1,4 @@
-
-
-const playBtn = document.getElementById("playBtn");
-
+// Wave Surfer Customization
 const wavesurfer = WaveSurfer.create({
     container: '#waveform',
     waveColor: '#bdbdbd',
@@ -16,8 +13,11 @@ const wavesurfer = WaveSurfer.create({
     getDuration: 1,
   })
   
+
+// Wave Surfer File Load -- MUST BE CHANGED TO USER INPUT
   wavesurfer.load('media/Rain-Sound-effect.mp3');
 
+// Wave Surfer Play, Pause, and Loop functionality
   playBtn.onclick = function(){
     wavesurfer.playPause();
     if(playBtn.src.includes("play.png")){
@@ -46,10 +46,42 @@ const wavesurfer = WaveSurfer.create({
   }
   })
 
+// Wave Surfer Volume -- WIP to customize the slider
   var volumeInput = document.querySelector('#volume');
   var onChangeVolume = function (e) {
     wavesurfer.setVolume(e.target.value);
     console.log(e.target.value);
   };
-volumeInput.addEventListener('input', onChangeVolume);
-volumeInput.addEventListener('change', onChangeVolume);
+  volumeInput.addEventListener('input', onChangeVolume);
+  volumeInput.addEventListener('change', onChangeVolume);
+
+// Rename Field Functionality
+function editField() {
+  let h2 = document.getElementById("renameField");
+  let currentText = h2.innerText;
+  
+  let input = document.createElement("input");
+  input.type = "text";
+  input.value = currentText;
+  input.onblur = function() {
+      h2.innerText = input.value || currentText;
+      h2.onclick = editField;  // Re-enable editing
+  };
+  input.onkeydown = function(event) {
+      if (event.key === 'Enter') {
+          input.blur();
+      }
+  };
+  input.onblur = function() {
+    if (input.value.trim() === '') {
+    } else {
+        h2.innerText = input.value;
+        h2.onclick = editField;  // Re-enable editing
+    }
+};
+  
+  h2.innerHTML = '';
+  h2.appendChild(input);
+  input.focus();
+  input.select();
+}
