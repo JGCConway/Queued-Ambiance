@@ -1,4 +1,4 @@
-// Wave Surfer Customization
+// Wave Surfer Customization adnd file load
 const wavesurfer = WaveSurfer.create({
     container: '#waveform',
     waveColor: '#bdbdbd',
@@ -13,11 +13,13 @@ const wavesurfer = WaveSurfer.create({
     getDuration: 1,
   })
   
+  wavesurfer.load('media/Rain-Sound-effect.mp3'); // WILL BE USER INPUT
 
-// Wave Surfer File Load -- MUST BE CHANGED TO USER INPUT
-  wavesurfer.load('media/Rain-Sound-effect.mp3');
+//-------------------------------------------------------------//
 
 // Wave Surfer Play, Pause, and Loop functionality
+
+//Play to Pause
   playBtn.onclick = function(){
     wavesurfer.playPause();
     if(playBtn.src.includes("play.png")){
@@ -26,7 +28,7 @@ const wavesurfer = WaveSurfer.create({
         playBtn.src = "media/play.png";
     }
   }
-
+//Loop OFF to Loop ON
   loopBtn.onclick = function(){    
     if (loopBtn.src.includes("loop.png")){
         loopBtn.src = "media/loopOn.png";
@@ -36,7 +38,7 @@ const wavesurfer = WaveSurfer.create({
         loopBtn.style.opacity = ".5"
     }
   }
-
+//Loop OFF to Play
   wavesurfer.on('finish', function(){
     if (loopBtn.src.includes("loopOn.png")){
       wavesurfer.playPause();
@@ -45,6 +47,8 @@ const wavesurfer = WaveSurfer.create({
       playBtn.src = "media/play.png"
   }
   })
+
+//-------------------------------------------------------------//
 
 // Wave Surfer Volume -- WIP to customize the slider
   var volumeInput = document.querySelector('#volume');
@@ -55,23 +59,29 @@ const wavesurfer = WaveSurfer.create({
   volumeInput.addEventListener('input', onChangeVolume);
   volumeInput.addEventListener('change', onChangeVolume);
 
+//-------------------------------------------------------------//
+
 // Rename Field Functionality
 function editField() {
   let h2 = document.getElementById("renameField");
   let currentText = h2.innerText;
-  
   let input = document.createElement("input");
+
   input.type = "text";
   input.value = currentText;
+
+  //Click into the field
   input.onblur = function() {
       h2.innerText = input.value || currentText;
       h2.onclick = editField;  // Re-enable editing
   };
+// On KeyPress "ENTER"
   input.onkeydown = function(event) {
       if (event.key === 'Enter') {
           input.blur();
       }
   };
+  // Blank Field Protection
   input.onblur = function() {
     if (input.value.trim() === '') {
     } else {
@@ -85,3 +95,5 @@ function editField() {
   input.focus();
   input.select();
 }
+
+//-------------------------------------------------------------//
