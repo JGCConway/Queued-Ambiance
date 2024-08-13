@@ -45,3 +45,11 @@ const wavesurfer = WaveSurfer.create({
       playBtn.src = "media/play.png"
   }
   })
+
+  var volumeInput = document.querySelector('#volume');
+  var onChangeVolume = function (e) {
+    wavesurfer.setVolume(e.target.value);
+    console.log(e.target.value);
+  };
+volumeInput.addEventListener('input', onChangeVolume);
+volumeInput.addEventListener('change', onChangeVolume);

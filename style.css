@@ -163,7 +163,6 @@ margin-left: 5vh;
 .populatedSoundWave{
     display: flex;
     align-items: center;
-    
 }
 
 .populatedSoundWave img{
@@ -177,8 +176,15 @@ margin-left: 5vh;
     opacity: 100%;
 }
 
-
 .populatedSoundWave div{
     flex: 1;
     max-width: 97%;
+}
+
+.populatedSoundWave span{
+    display: flex;
+    align-items: center;
+}
+
+.volBox input{
 }
