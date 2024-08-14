@@ -13,7 +13,7 @@
     <!---------------------------Header Components------------------------------------>
     <Nav class="topnav">
         <div class="headerImage">
-            <a href="index.html"><img src="media/QAMHeader.svg" width="200" height="100" alt="QAM logo"/></a>
+            <a href="index.html"><img src="media/QAMHeader.svg" alt="QAM logo"/></a>
         </div>
         <div class="Navigation-Options-Parent">
             <div class="Navigation-Options-list">
@@ -22,7 +22,7 @@
             </div>
         </div>
     </Nav>
-<!---------------------------Drop Box Components------------------------------------>
+<!------------------------Populated Box Components---------------------------------->
     <div class="populatedBodyParentOne">
         <div class="populatedDottedOutlineOne">
             <div class="populatedInnerBoxOne">
@@ -31,18 +31,20 @@
                 <div class="volbox">
                     Volume: 
                     <input id="volume" type="range" min="0" max="1" value="1" step="0.1">
+                    <label>
+                        Stop All
+                        <input type="checkbox" title="Stop All" name="Stop All" value="Stop All"> 
+                    </label>
                 </div>
                 <div class="populatedSoundWave">
                     <img src="media/play.png" id="playBtn">
                     <img src="media/loop.png" id="loopBtn">
                     <div id="waveform"></div>
                 </div>
-               <!-- <label>
-                    <input type="checkbox" title="Stop All" name="Stop All" value="Stop All"> Stop All Audio
-                </label> -->
             </div>
         </div>
     </div>
+
 
     <div class="blankBodyParentOne">
         <div class="dottedOutlineOne">

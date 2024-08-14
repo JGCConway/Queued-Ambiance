@@ -1,4 +1,4 @@
-// Wave Surfer Customization adnd file load
+// Wave Surfer Customization and file load
 const wavesurfer = WaveSurfer.create({
     container: '#waveform',
     waveColor: '#bdbdbd',

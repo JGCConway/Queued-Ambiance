@@ -30,14 +30,20 @@ body{
 /* Navigation Header START */
 .topnav{
     background-color: #5a69ff;
-    top: 0px;
+    top: 0vh;
     display: flex;
 }
 
 .headerImage{
 display: flex;
-margin-left: 1.5vh;
+margin-left: 1.5vw;
+min-width: 1vw;
 }
+
+.headerImage img{
+    min-width: 6vw;
+    min-height:6vh;
+    }
 
 .Navigation-Options-Parent{
     width: 100%;
@@ -47,7 +53,6 @@ margin-left: 1.5vh;
 
 .Navigation-Options-list{
     align-content: center;
-
 }
 
 .Nav-Buttons{
@@ -159,7 +164,6 @@ margin-left: 1.5vh;
     flex-direction: column;
     padding-left: 1vw;
     padding-bottom: 1vh;
-
 }
 
 .populatedSoundWave{
@@ -173,12 +177,12 @@ margin-left: 1.5vh;
 
 .populatedSoundWave div{
     flex: 1;
-    max-width: 97%;
+    max-width: 98%;
 }
 
 .populatedSoundWave img{
     min-width: 3vw;
-    max-width: 3vw;
+    max-width: 10vw;
     margin-right: 1vw;
     cursor: pointer;
     opacity:50%;
