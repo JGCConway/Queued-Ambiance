@@ -181,14 +181,9 @@ min-width: 1vw;
 }
 
 .populatedSoundWave img{
-    min-width: 3vw;
-    max-width: 10vw;
+    min-width: 3vh;
+    max-width: 3vw;
     margin-right: 1vw;
     cursor: pointer;
     opacity:50%;
-}
-
-.populatedSoundWave span{
-    display: flex;
-    align-items: center;
 }
