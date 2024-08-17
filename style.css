@@ -35,13 +35,12 @@ body{
 }
 
 .headerImage{
-display: flex;
-margin-left: 1.5vw;
-min-width: 1vw;
+    display: flex;
+    margin-left: 1.5vw;
 }
 
 .headerImage img{
-    min-width: 6vw;
+    min-width: 10vw;
     min-height:6vh;
     }
 
