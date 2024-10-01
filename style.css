@@ -132,7 +132,7 @@ body{
 
 /* Populated Audio Drag and Drop START */
 
-.populatedBodyParentOne{
+.populatedBodyParentOne, .populatedBodyParentTwo{
     height: 30vh;
     margin-top: 3vh;
     display: flex;
@@ -140,7 +140,7 @@ body{
     align-items: center;
 }
 
-.populatedDottedOutlineOne{
+.populatedDottedOutlineOne, .populatedDottedOutlineTwo{
     border: rgba(90,105,255, .3);   
     border-style: dotted;
     height: auto;
@@ -153,7 +153,7 @@ body{
     align-items: center;
 }
 
-.populatedInnerBoxOne{
+.populatedInnerBoxOne, .populatedInnerBoxTwo{
     height: auto;
     width: 98%;
     background-color: #FFCA4A;
@@ -185,4 +185,39 @@ body{
     margin-right: 1vw;
     cursor: pointer;
     opacity:50%;
+}
+
+/*  Privacy Policy Page Below */
+
+.populatedBodyParentTwo{
+    height: 30vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.populatedDottedOutlineTwo{
+    border: rgba(90,105,255, .3);   
+    border-style: dotted;
+    height: auto;
+    padding: 1vh;
+    width: 90%;
+    margin-top: auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.populatedInnerBoxTwo{
+    height: auto;
+    width: 98%;
+    background-color: #FFCA4A;
+    border-radius: 15px;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
 }
