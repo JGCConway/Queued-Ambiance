@@ -132,15 +132,16 @@ body{
 
 /* Populated Audio Drag and Drop START */
 
-.populatedBodyParentOne, .populatedBodyParentTwo{
+.populatedBodyParentOne{
     height: 30vh;
-    margin-top: 3vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.populatedDottedOutlineOne, .populatedDottedOutlineTwo{
+.populatedDottedOutlineOne{
     border: rgba(90,105,255, .3);   
     border-style: dotted;
     height: auto;
@@ -151,9 +152,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.populatedInnerBoxOne, .populatedInnerBoxTwo{
+.populatedInnerBoxOne{
     height: auto;
     width: 98%;
     background-color: #FFCA4A;
