@@ -228,3 +228,18 @@ body{
     padding-left: 1vw;
     padding-bottom: 1vh;
 }
+
+footer{
+    height: 30vh;
+    margin-top: 5vh;
+    color: #FFCA4A;
+    background-color: #191d47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #FFCA4A;
+    padding-left: .5vw;
+}
