@@ -198,14 +198,14 @@ body{
 
 .populatedBodyParentTwo{
     height: auto;
-    margin-top: 3vh;
     display: flex;
+    margin-top: 4vh;
     justify-content: center;
     align-items: center;
 }
 
 .populatedDottedOutlineTwo{
-    border: rgba(90,105,255, .3);   
+    border: rgba(90,105,255, .3);  
     border-style: dotted;
     height: auto;
     padding: 1vh;
