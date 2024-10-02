@@ -58,6 +58,7 @@ body{
     list-style: none;
     text-decoration: none;
     font-size: large;
+    font-weight: 500;
     color: #F2F2F2;
     background-color: #8b96ff;
     padding: 7.5px;
@@ -134,7 +135,7 @@ body{
 
 .populatedBodyParentOne{
     height: 30vh;
-    margin-top: 10vh;
+    margin-top: 7vh;
     margin-bottom: 10vh;
     display: flex;
     justify-content: center;
@@ -189,10 +190,14 @@ body{
     opacity:50%;
 }
 
-/*  Privacy Policy Page Below */
+/*  Privacy Policy Page */
+
+.releaseNotes, .privacyNotes{
+    margin-top: 7vh;
+}
 
 .populatedBodyParentTwo{
-    height: 30vh;
+    height: auto;
     margin-top: 3vh;
     display: flex;
     justify-content: center;
