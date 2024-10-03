@@ -145,7 +145,7 @@ body{
     border: rgba(90,105,255, .3);   
     border-style: dotted;
     height: auto;
-    padding: 1vh;
+    padding: 1vw;
     width: 90%;
     margin-top: 3vh;
     border-radius: 15px;
@@ -207,7 +207,7 @@ body{
     border: rgba(90,105,255, .3);  
     border-style: dotted;
     height: auto;
-    padding: 1vh;
+    padding: 1vw;
     width: 90%;
     margin-top: auto;
     border-radius: 15px;
@@ -243,7 +243,7 @@ body{
     border: rgba(90,105,255, .3);  
     border-style: dotted;
     height: auto;
-    padding: 1vh;
+    padding: 1vw;
     width: 90%;
     margin-top: auto;
     border-radius: 15px;
