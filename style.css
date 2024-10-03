@@ -79,8 +79,32 @@ body{
     padding-right: 3vw;
     cursor: pointer;
 }
+/*______________________________________________________________ */
 
-/*_________________________________________________________________________________ */
+
+.audioButtons{
+    left: 89%;
+    top: 50%;
+    position: fixed;
+    z-index: 6;
+}
+
+.stopAllAudio{
+    width: 10vw;
+    margin-bottom: 1vh;
+    border: none;
+    border-radius: .3vw;
+    background-color: #5a69ff;
+    color: #FFCA4A;
+    font-size: large;
+}
+.stopAllAudio:hover{
+    background-color: #333c97;
+}
+
+
+
+/*______________________________________________________________ */
 
 /* Blank Audio Drag and Drop START */
 
