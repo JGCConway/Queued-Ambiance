@@ -24,6 +24,7 @@
     </Nav>
 
     <div class="audioButtons">
+        <button id="stopAllAudio" class="stopAllAudio">Stop All</button>
         <button id="stopAllAudio" class="stopAllAudio">Stop All Sound</button>
         <!--<button id="stopAllAudio" class="stopAllAudio">Stop All Sounds</button>
         <button id="stopAllAudio" class="stopAllAudio">Stop All Sounds</button>
@@ -186,6 +187,28 @@
                     <img src="media/play.png" id="playBtn7">
                     <img src="media/loop.png" id="loopBtn7">
                     <div id="waveform7"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="populatedBodyParentOne">
+        <div class="populatedDottedOutlineOne">
+            <div class="populatedInnerBoxOne">
+                <p id="fileName8">fileName.filetype</p>
+                <h2 id="renameField8" onclick="editField8()">Cave Sounds (Renameable Field)</h2>
+                <div class="volbox">
+                    Volume: 
+                    <input id="volume8" type="range" min="0" max="1" value="1" step="0.01">
+                    <!--<label>
+                        Stop All
+                        <input type="checkbox" title="Stop All" name="Stop All" value="Stop All" id="stopAll"> 
+                    </label> -->
+                </div>
+                <div class="populatedSoundWave">
+                    <img src="media/play.png" id="playBtn8">
+                    <img src="media/loop.png" id="loopBtn8">
+                    <div id="waveform8"></div>
                 </div>
             </div>
         </div>

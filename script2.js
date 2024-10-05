@@ -92,11 +92,6 @@ input.select();
 }
 
 
-
-
-
-
-
 //-------------------------------3-------------------------------------//
 
 
@@ -187,11 +182,6 @@ h2.appendChild(input);
 input.focus();
 input.select();
 }
-
-
-
-
-
 
 
 //--------------------------------4------------------------------------//
@@ -285,12 +275,6 @@ input.select();
 }
 
 
-
-
-
-
-
-
 //-------------------------------5-------------------------------------//
 
   const wavesurfer5= WaveSurfer.create({ 
@@ -380,12 +364,6 @@ h2.appendChild(input);
 input.focus();
 input.select();
 }
-
-
-
-
-
-
 
 
 //----------------------------------6----------------------------------//
@@ -478,10 +456,6 @@ h2.appendChild(input);
 input.focus();
 input.select();
 }
-
-
-
-
 
 
 //----------------------------- 7 ---------------------------------------//
@@ -577,4 +551,93 @@ input.focus();
 input.select();
 }
 
-//---------------------------------------------------------------------//
+
+//----------------------------------8----------------------------------//
+
+const wavesurfer8= WaveSurfer.create({ 
+  container: '#waveform8',
+  waveColor: '#bdbdbd',
+  progressColor: '#5A69FF',
+  url: 'media/dungeonMusic.mp3',
+  barWidth: 3,
+  responsive: true,
+  barHeight: 5,
+  barRadius: 0,
+  cursorWidth: 2,
+  interact: true,
+  getDuration: 1,
+})
+
+wavesurfer8.load('media/caveSounds.mp3'); // WILL BE USER INPUT
+
+playBtn8.onclick = function(){
+  wavesurfer8.playPause();
+  if(playBtn8.src.includes("play.png")){
+      playBtn8.src = "media/pause.png";
+  }else{
+      playBtn8.src = "media/play.png";
+  }
+}
+//Loop OFF to Loop ON
+loopBtn8.onclick = function(){    
+  if (loopBtn8.src.includes("loop.png")){
+      loopBtn8.src = "media/loopOn.png";
+      loopBtn8.style.opacity = "1"
+  }else{
+      loopBtn8.src = "media/loop.png";
+      loopBtn8.style.opacity = ".5"
+  }
+}
+//Loop OFF to Play
+wavesurfer8.on('finish', function(){
+  if (loopBtn8.src.includes("loopOn.png")){
+    wavesurfer8.playPause();
+}else{
+    loopBtn8.src = "media/loop.png";
+    playBtn8.src = "media/play.png"
+}
+})
+
+var volumeInput = document.querySelector('#volume8');
+var onChangeVolume = function (e) {
+  wavesurfer8.setVolume(e.target.value);
+  console.log(e.target.value);
+};
+volumeInput.addEventListener('input', onChangeVolume);
+volumeInput.addEventListener('change', onChangeVolume);
+
+
+// Rename Field Functionality
+function editField8() {
+let h2 = document.getElementById("renameField8");
+let currentText = h2.innerText;
+let input = document.createElement("input");
+
+input.type = "text";
+input.value = currentText;
+
+//Click into the field
+input.onblur = function() {
+    h2.innerText = input.value || currentText;
+    h2.onclick = editField;  // Re-enable editing
+};
+// On KeyPress "ENTER"
+input.onkeydown = function(event) {
+    if (event.key === 'Enter') {
+        input.blur();
+    }
+};
+// Blank Field Protection
+input.onblur = function() {
+  if (input.value.trim() === '') {
+  } else {
+      h2.innerText = input.value;
+      h2.onclick = editField8;  // Re-enable editing
+  }
+};
+
+h2.innerHTML = '';
+h2.appendChild(input);
+input.focus();
+input.select();
+}
