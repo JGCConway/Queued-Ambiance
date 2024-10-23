@@ -83,16 +83,25 @@ body{
 
 
 .audioButtons{
-    left: 93%;
-    top: 90%;
+    left: 90%;
+    top: 80%;
     position: fixed;
     z-index: 6;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1vw;
+    width: 7.2vw;
+    padding: .5vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
 }
 
 .stopAllAudio{
-    width: 6vw;
-    height: 6vh;
-    margin-bottom: 1vh;
+    width: auto;
+    height: auto;
     border: none;
     border-radius: .3vw;
     background-color: #5a69ff;
@@ -158,10 +167,9 @@ body{
 /* Populated Audio Drag and Drop START */
 
 .populatedBodyParentOne{
-    height: 30vh;
-    margin-top: 7vh;
-    margin-bottom: 10vh;
+    height: auto;
     display: flex;
+    margin-top: 4vh;
     justify-content: center;
     align-items: center;
 }
